@@ -47,7 +47,7 @@ Projenizi kendi bilgisayarınıza klonlamak için aşağıdaki adımları takip 
 git clone https://github.com/afeyimmm/botserisi.git
 
 # Proje klasörüne girin
-cd botserisi-main
+cd botserisi
 ```
 Bu komutlar:
 1.GitHub reposunu bilgisayarınıza indirir.                   
