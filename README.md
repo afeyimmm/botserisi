@@ -7,7 +7,7 @@ Bu proje, `Node.js` ve `Discord.js` v14 kullanılarak geliştirilmiş modüler b
 ```index.js ```
 #            yeni eklenen 
  ```
-commands/ klasörüne 20+ komut detaylar  !help.js !
+commands/ klasörüne 20+ komut detaylar  !help.js
  ```
 
 
@@ -43,7 +43,7 @@ project/
     │   ├── kick.js                  
     │   ├── mute.js                         
     │   └── unmute.js                                                    
-    └── help.js                  
+    └── help.js               
 
  
 ### ⚙️ Özellikler
