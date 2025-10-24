@@ -5,39 +5,69 @@ Bu proje, `Node.js` ve `Discord.js` v14 kullanılarak geliştirilmiş modüler b
 
 
 
+
+
 # 📂 Proje Yapısı
-/project
+project/                   
+|── index.js   # Botun ana dosyası                   
+├── .env      # Bot token'ı                                          
+├── LICENSE   
+├── package.json        
+├── package-lock.json           
+├── README.md                      
+└── commands/             
+    ├── eglence/                                             
+    │   ├── emojify.js                                                        
+    │   ├── espri.js                                     
+    │   ├── hug.js                                                          
+    │   ├── kiss.js                                 
+    │   ├── roll.js        
+    │   ├── slot.js                                                    
+    │   └── yazıtura.js                                       
+    ├── kullanıcı/                            
+    │   ├── avatar.js                                              
+    │   ├── kullanicibilgi.js                   
+    │   ├── ping.js                                 
+    │   ├── remindme.js                              
+    │   ├── roleinfo.js                   
+    │   ├── say.js                                                 
+    │   ├── serverinfo.js                                             
+    │   └── toproles.js                                   
+    ├── moderasyon/                                               
+    │   ├── ban.js                                    
+    │   ├── clear.js                                          
+    │   ├── kick.js                  
+    │   ├── mute.js                         
+    │   └── unmute.js                                                    
+    └── help.js                  
+
+ 
+### ⚙️ Özellikler
+
+✅ Tam modüler yapı (komutlar klasörlere ayrılmış)            
+✅ ```.env``` ile güvenli token yönetimi                     
+✅ Mesaj tabanlı prefix sistemi (```!help```)                     
+✅ Embed tabanlı gelişmiş ```!help``` komutu                                    
+✅ Eğlence, kullanıcı ve moderasyon kategorileri                       
+✅ API destekli komutlar (örneğin ```espri.js```)                    
+✅ Kolay genişletilebilir sistem              
 
 
- ├─ ```index.js```          Botun ana dosyası            
- ├─ ```commands/```           Komutların bulunduğu klasör           
- │   └─ ```ping.js```         Örnek komut             
- ├─ ```package.json```        NPM bağımlılıkları     
- ├─ ```package-lock.json```     
- └─ ```.env```                Gizli bot token'ı
-
-
-
-
-
- # ⚡ Özellikler
- 1.Modüler komut sistemi                    
- 2.```.env``` ile güvenli token yönetimi                  
- 3.Basit mesaj tabanlı komut desteği ```!ping```                                                        
- 4.Kolay genişletilebilir yapı                 
-
-
-
-
- # 🛠 Kurulum ve Başlatma
+# 🛠 Kurulum ve Başlatma
  Evet botumuzun herşeyi bitti ve şimdi gerekli kurulumları yapıp başlatıcaz
+
 ## 1️⃣ Node.js ve npm Kurulumu
+
 ```
 # Node.js ve npm sürümünü kontrol et
 node -v
 npm -v
 ```
 ### Node.js >=16 sürümü gereklidir.
+# (yeni) bunuda yapmanız gerek
+```
+npm install discord.js dotenv node-fetch
+```
 
 
 ## 2️⃣ Projeyi Klonla
@@ -58,7 +88,7 @@ Bu komutlar:
 
 
 
-## 4️⃣ .env Dosyasını Doldur
+## 4️⃣ ```.env``` Dosyasını Doldur
 
 ```
 BOT_TOKEN=buraya_bot_tokeninizi_yazın
@@ -101,12 +131,13 @@ module.exports = {
 
 
 
-# 🌐 Gelecek Özellikler (Opsiyonel)
-- Slash komut desteği                      
-- Otomatik rol ve moderasyon sistemi
-- Seviye / XP sistemi / Oyun sistemi
-- Veri tabanı entegrasyonu (MongoDB, SQLite)
+# 🚀 Gelecek Özellikler
 
+- Slash (/) komut desteği
+- Otomatik rol sistemi
+- XP / seviye sistemi
+- Müzik sistemi
+- Web panel entegrasyonu
 
 
 
@@ -116,27 +147,12 @@ module.exports = {
 
 # 📚 Kaynaklar
 - [Discord.js Resmi Dokümantasyon](https://discord.js.org/)                                        
-- [Node.js Resmi Dokümantasyon](https://nodejs.org/)                                   
+- [Node.js Resmi Dokümantasyon](https://nodejs.org/)
+- [JokeAPI (espri API’si)](https://v2.jokeapi.dev/)                                  
 
 # 🧑‍💻 Lisans
+
 MIT Lisansı
+Telif Hakkı © 2025 AfeDev
 
-Telif hakkı © 2025 AfeDev
-
-Bir kopyasını edinen herkese, bu belgeyle ücretsiz olarak izin verilmiştir.
-Bu yazılımın ve ilişkili dokümantasyon dosyalarının ("Yazılım"),
-Yazılımda, sınırlama olmaksızın, haklar dahil olmak üzere, herhangi bir kısıtlama olmaksızın
-kullanmak, kopyalamak, değiştirmek, birleştirmek, yayınlamak, dağıtmak, alt lisanslamak ve/veya satmak
-Yazılımın kopyalarını ve Yazılımın kendilerine ait olduğu kişilere izin vermek için
-Bunu yapmak için aşağıdaki koşullara tabi olarak sağlanmıştır:
-
-Yukarıdaki telif hakkı bildirimi ve bu izin bildirimi tüm
-Yazılımın kopyaları veya önemli bölümleri.
-
-YAZILIM, HERHANGİ BİR TÜRDE AÇIK VEYA GARANTİ OLMADAN "OLDUĞU GİBİ" SAĞLANMAKTADIR
-TİCARİ ELVERİŞLİLİK GARANTİLERİ DAHİL ANCAK BUNLARLA SINIRLI OLMAMAK ÜZERE ZIMNİ OLARAK,
-BELİRLİ BİR AMACA UYGUNLUK VE İHLAL ETMEME. HİÇBİR DURUMDA
-YAZARLAR VEYA TELİF HAKKI SAHİPLERİ HERHANGİ BİR TALEP, ZARAR VEYA DİĞER SORUMLULUĞU ALTINDADIR
-SÖZLEŞME, HAKSIZ FİİL VEYA BAŞKA BİR ŞEKİLDE ORTAYA ÇIKAN SORUMLULUK,
-YAZILIM VEYA YAZILIMIN KULLANIMI VEYA DİĞER İŞLEMLERLE İLGİLİ OLARAK VEYA BUNLARLA İLGİLİ OLARAK
-YAZILIM.
+Yazılım “olduğu gibi” sağlanmaktadır. Kullanıcı, değiştirme ve dağıtma haklarına sahiptir.
