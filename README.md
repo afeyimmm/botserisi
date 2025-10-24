@@ -3,8 +3,12 @@
 Bu proje, `Node.js` ve `Discord.js` v14 kullanılarak geliştirilmiş modüler bir Discord botudur. Komutlar `commands` klasöründe ayrı dosyalar halinde tutulur ve `.env` dosyası ile token güvenliği sağlanır.
 
 
-
-
+# değişenler  
+```index.js ```
+# yeni eklenen 
+ ```
+commands/ klasörüne 20+ komut detaylar  ```!help.js ```!
+ ```
 
 
 # 📂 Proje Yapısı
